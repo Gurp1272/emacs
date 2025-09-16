@@ -51,3 +51,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+;; Disable modes
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+
+;; Fullscreen on startup
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
