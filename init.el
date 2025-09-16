@@ -13,6 +13,13 @@
 (require 'use-package)
 (setq use-package-always-ensure t) ; Automatically install packages
 
+;; Disable modes
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+
+;; Fullscreen on startup
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 ;; Enable a minimal theme
 (use-package modus-themes
   :ensure t
@@ -53,9 +60,4 @@
  )
 
 
-;; Disable modes
-(menu-bar-mode -1)
-(tool-bar-mode -1)
 
-;; Fullscreen on startup
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
